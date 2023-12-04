@@ -1,0 +1,119 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	background-color: black;
+}
+.main{
+	display: flex;
+	color: white;
+}
+
+.left{
+	display: grid;
+	width: 90%;
+	color: white;
+	grid-template-columns: repeat(14);
+}
+
+.right{
+	text-transform: uppercase;
+	margin: 20px;
+	text-align: right;	
+	width: 20%;
+}
+
+.title{
+	margin-bottom: 30px;
+}
+
+ul{
+	margin-bottom: 20px;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+
+
+#active{
+	color: red;
+}
+li{
+	margin-bottom: 10px;
+}
+
+.fa-brands{
+	margin-left: 10px;
+}
+.one{
+	color: white;
+	border: 2px solid black;
+	margin: 5px;
+	height: 200px;
+/*	padding: 30px;*/
+}
+
+#two1{
+	grid-column: 1/10;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+
+
+}
+
+
+#two2{
+	grid-column-start: 2;
+	grid-column: 10/14;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+
+}
+
+#two3{
+	
+	grid-column: 1/5;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+
+}
+
+#two4{
+	grid-column: 5/11;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+}
+
+#two5{
+	grid-column: 11/14;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+}
+
+
+#two6{
+	grid-column: 1/8;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+}
+
+#two7{
+	grid-column: 8/14;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+}
+
+#two8{
+	grid-column: 1/5;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+}
+
+
+#two9{
+	grid-column: 5/11;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+
+}
+
+
+#two10{
+	grid-column: 11/14;
+	background-image: url(https://media.istockphoto.com/id/1140180560/photo/colored-powder-explosion-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=zH3risZiB4SdFbCZGzMRBpjvNJ_Rg8V7-cjg58R9jCQ=);
+}
