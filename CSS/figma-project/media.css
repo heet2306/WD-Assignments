@@ -1,3 +1,4 @@
+/* for phone  media screen */
 @media (max-width:436px){
     .work{
         max-width: calc(100% - 20px);
@@ -33,6 +34,7 @@
     }
 }
 
+/* for tab media  */
 @media (max-width : 545px){
     .customer-review{
         width: 100%;
@@ -59,7 +61,7 @@
         display: none;
     }
 }
-
+/* for small screen */
 @media (max-width : 670px){
     .timelinegraph{
         width: 100%;
@@ -78,7 +80,7 @@
         border-bottom: 5px solid var(--clr-seccondary);
     }
 }
-
+/* for large screen */
 @media (max-width : 870px){
     .save-green{
         display: none;

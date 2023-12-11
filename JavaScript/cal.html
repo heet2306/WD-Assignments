@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Opration</title>
+</head>
+
+<body>
+    <div class="main">
+        <h1 style="text-align: center;">Maths operations</h1>
+        <table>
+            <tr>
+                <!-- Two inputs from user -->
+                <td>Enter 1st number: </td>
+                <td><input type="number" id='n1' value="0"></td>
+            </tr>
+            <tr>
+                <td>Enter 1st number: </td>
+                <td><input type="number" id='n2' value="0"></td>
+            </tr>
+            <tr>
+                <td>
+                    <!-- Onclick operations -->
+                    <button onclick="heet('*')">*</button>
+                    <button onclick="heet('-')">-</button>
+                    <button onclick="heet('+')">+</button>
+                    <button onclick="heet('/')">/</button>
+                    <button onclick="heet('%')">%</button>
+                </td>
+                <td>
+                    <h4>Answer is <span id="total">0</span></h4>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+    function heet(one) {
+        // get values of two input with its id
+        // using parent to take only number value
+        let n1 = parseInt(document.getElementById("n1").value);
+        let n2 = parseInt(document.getElementById("n2").value);
+        let ans = document.getElementById("total");
+        //  Identify the mathematical operations
+        // If it's * then multiply to number and update the ans
+        if (one === "*") {
+            ans.innerHTML = n1 * n2;
+        }
+        // If it's - then minus to number and update the ans
+        else if (one === "-") {
+            ans.innerHTML = n1 - n2;
+        }
+        // If it's + then add to number and update the ans
+        else if (one === "+") {
+            ans.innerHTML = n1 + n2;
+        }
+        // If it's / then divide number and update the ans
+        else if (one === "/") {
+            ans.innerHTML = n1 / n2;
+        }
+        //    else modulo
+        else {
+            ans.innerHTML = n1 % n2;
+        }
+    }
+</script>
+
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function One() {
+    var x = document.getElementById("hide");
+    // using this condition we can check either var's type is password or not it it's password than it's convert into text when click on he checkbox and when check it again than it's convert into password
+    if (x.type === "password") {
+        x.type = "text";
+    }
+    else {
+        x.type = "password";
+    }
+    }
+</script>
+<body>
+    <table>
+        <tr>
+            <td> <input type="password" value="Heet" id="hide"></td>
+        </tr>
+        <tr>
+            <td><input type="checkbox" onclick="One()" > show password</td>
+        </tr>
+    </table>
+   
+
+</body>
+</html>

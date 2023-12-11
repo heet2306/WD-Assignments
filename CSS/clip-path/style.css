@@ -1,3 +1,4 @@
+/* root element use for the variable in this var i store backgound color   */
 :root {
   --clr-white: rgb(243, 245, 249);
   --clr-red: rgb(231, 75, 59);
@@ -215,14 +216,18 @@ nav>ul>li:hover:after {
 .fects-container {
   max-width: 1200px;
   display: flex;
+  flex-wrap: wrap;
   margin-inline: auto;
   gap: 40px;
 }
 
 .fect {
+  width: 20%;
+  margin: auto;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+  justify-content: center;
   gap: 15px;
   cursor: pointer;
 }

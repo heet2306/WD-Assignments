@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+
+<body>
+    <div class="main">
+        <table>
+            <!-- Using form to get all the input values -->
+            <form id="heet">
+                <tr>
+                    <td><b>Marksheet for information technology</b></td>
+                </tr>
+                <tr>
+                    <td>Enter marks</td>
+                </tr>
+                <tr>
+                    <td>C Language: </td>
+                    <td><input type="number" max="50" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>C++: </td>
+                    <td><input type="number" max="50" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>Database: </td>
+                    <td><input type="number" max="50" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>HTML: </td>
+                    <td><input type="number" max="50" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>CSS: </td>
+                    <td><input type="number" max="50" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>PHP: </td>
+                    <td><input type="number" max="50" value="0" min="0"></td>
+                </tr>
+
+                <tr>
+                    <td>Core Java: </td>
+                    <td><input type="number" max="50" value="0" min="0"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center"><button onclick="total()">Result</button></td>
+                </tr>
+                <tr>
+                    <!-- Output the total and percentage -->
+                    <td>Total is : <span id="sum" style="color: blue;">0</span> / 350</td>
+                    <td>
+                        Percentage is : <span id="perc" style="color: blue;">0</span> %
+                    </td>
+                </tr>
+            </form>
+        </table>
+
+
+
+
+    </div>
+</body>
+<script>
+    // Total function
+    function total() {
+        // prevent the page to refresh
+        event.preventDefault();
+        // get the form element with its id
+        let modh = document.getElementById("heet");
+        // Initialize the sum to 0
+        let sum = 0;
+        // Iterate through all form properties
+        for (var i = 0; i < fo.length; i++) {
+            // If the type is number them add to the existing value of the sum
+            if (modh[i].type === 'number') {
+                sum += parseInt(modh[i].value) || 0;
+            }
+        }
+        // Percentage
+        let per = ((sum / 350) * 100).toFixed(2)
+        // Update the sum and percentage
+        document.getElementById("sum").innerHTML = sum;
+        document.getElementById("perc").innerHTML = per
+
+
+    }
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</html>
